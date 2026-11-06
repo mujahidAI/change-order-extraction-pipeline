@@ -1,0 +1,19 @@
+{
+  "change_order_number": "2",
+  "project_name": "Westgate Fire Station No. 4",
+  "contractor": "Ironclad Mechanical LLC",
+  "owner": "Westgate County",
+  "date_issued": "2026-01-27",
+  "description": "Upgrade apparatus bay sprinkler system",
+  "reason": "Updated fire code (NFPA 13 revision adopted by the county)",
+  "reason_category": "code_compliance",
+  "cost_change": 12480.0,
+  "currency": "USD",
+  "original_contract_sum": 3400000.0,
+  "contract_sum_before": 3415200.0,
+  "revised_contract_sum": 3427680.0,
+  "schedule_impact_days": 7,
+  "approval_status": "approved",
+  "approved_by": "Maria Alvarez",
+  "date_approved": "2026-02-02"
+}

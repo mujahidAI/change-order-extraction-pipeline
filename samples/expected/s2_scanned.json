@@ -1,0 +1,24 @@
+{
+  "change_order_number": "7",
+  "project_name": "Maple Street Library Renovation",
+  "contractor": "Northline Construction Inc.",
+  "owner": "City of Maple Grove",
+  "date_issued": "2025-10-03",
+  "description": "Substitute specified Armstrong acoustic ceiling tile with USG Mars tile",
+  "reason": "Specified tile discontinued by manufacturer",
+  "reason_category": "material_substitution",
+  "cost_change": -240.0,
+  "currency": "USD",
+  "original_contract_sum": 842500.0,
+  "contract_sum_before": 851300.0,
+  "revised_contract_sum": 851060.0,
+  "schedule_impact_days": 0,
+  "approval_status": "approved",
+  "approved_by": "Dana Whitfield",
+  "date_approved": "2025-10-09",
+  "line_items_totals": [
+    3720.0,
+    180.0,
+    -4140.0
+  ]
+}

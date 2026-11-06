@@ -1,0 +1,24 @@
+{
+  "change_order_number": "CO-014",
+  "project_name": "Riverside Clinic Phase 2",
+  "contractor": "ABC Builders Ltd.",
+  "owner": "Riverside Health Authority",
+  "date_issued": "2026-03-12",
+  "description": "Add two windows on east wall of exam room wing",
+  "reason": "Owner request for additional natural light",
+  "reason_category": "owner_request",
+  "cost_change": 4250.0,
+  "currency": "USD",
+  "original_contract_sum": 1250000.0,
+  "contract_sum_before": 1262400.0,
+  "revised_contract_sum": 1266650.0,
+  "schedule_impact_days": 3,
+  "approval_status": "pending",
+  "approved_by": null,
+  "date_approved": null,
+  "line_items_totals": [
+    2400.0,
+    1360.0,
+    490.0
+  ]
+}

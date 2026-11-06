@@ -1,0 +1,22 @@
+{
+  "change_order_number": "4",
+  "project_name": "2025 Commercial Full Depth Reclamation Improvements Project",
+  "contractor": "Anderson Brothers Construction",
+  "owner": [
+    "City of Baxter",
+    "Baxter"
+  ],
+  "date_issued": null,
+  "reason_category": "unforeseen_condition",
+  "cost_change": 23341.29,
+  "currency": "USD",
+  "original_contract_sum": 737884.85,
+  "contract_sum_before": 741535.75,
+  "revised_contract_sum": 764877.04,
+  "schedule_impact_days": null,
+  "approval_status": "pending",
+  "line_items_totals": [
+    20404.91,
+    2936.38
+  ]
+}

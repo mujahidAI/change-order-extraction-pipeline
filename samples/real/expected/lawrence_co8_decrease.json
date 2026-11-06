@@ -1,0 +1,21 @@
+{
+  "change_order_number": "08",
+  "project_name": "Water System Improvements - Phase II, Contract B: Water Main Improvements",
+  "contractor": "J.G. Case Construction, Inc.",
+  "owner": [
+    "City of Lawrence Utilities",
+    "City of Lawrence"
+  ],
+  "date_issued": "2024-11-19",
+  "cost_change": -14000.0,
+  "currency": "USD",
+  "original_contract_sum": 3367585.0,
+  "contract_sum_before": 3658843.52,
+  "revised_contract_sum": 3644843.52,
+  "schedule_impact_days": [
+    0,
+    null
+  ],
+  "approval_status": "pending",
+  "line_items_totals": []
+}

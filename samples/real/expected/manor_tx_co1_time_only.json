@@ -1,0 +1,24 @@
+{
+  "change_order_number": "1",
+  "project_name": "Gregg Manor Road Ground Storage Tank and Pressurization Facility Improvements",
+  "contractor": "CC Carlton, Industries, Ltd.",
+  "owner": [
+    "City of Manor",
+    "Manor"
+  ],
+  "date_issued": null,
+  "reason_category": "unforeseen_condition",
+  "cost_change": [
+    0,
+    null
+  ],
+  "currency": [
+    null,
+    "USD"
+  ],
+  "original_contract_sum": null,
+  "revised_contract_sum": null,
+  "schedule_impact_days": 123,
+  "approval_status": "pending",
+  "line_items_totals": []
+}

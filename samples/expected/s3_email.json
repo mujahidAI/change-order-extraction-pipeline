@@ -1,0 +1,24 @@
+{
+  "change_order_number": "3",
+  "project_name": "Harbor View Apartments",
+  "contractor": "Summit Ridge Contractors",
+  "owner": "Harbor View Holdings LLC",
+  "date_issued": "2025-10-21",
+  "description": "Reroute around abandoned 6 inch water main found during foundation excavation",
+  "reason": "Abandoned water main discovered during excavation",
+  "reason_category": "unforeseen_condition",
+  "cost_change": 5840.0,
+  "currency": "USD",
+  "original_contract_sum": null,
+  "contract_sum_before": null,
+  "revised_contract_sum": null,
+  "schedule_impact_days": 4,
+  "approval_status": "pending",
+  "approved_by": null,
+  "date_approved": null,
+  "line_items_totals": [
+    2610.0,
+    2480.0,
+    750.0
+  ]
+}

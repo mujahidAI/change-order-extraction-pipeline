@@ -1,0 +1,25 @@
+{
+  "change_order_number": "10",
+  "project_name": [
+    "Marshall Municipal Building",
+    "777.01 Marshall Municipal Building"
+  ],
+  "contractor": "Brennan Construction of MN, Inc.",
+  "owner": "City of Marshall",
+  "date_issued": [
+    "2020-11-05",
+    "2021-01-08"
+  ],
+  "cost_change": 18007.0,
+  "currency": "USD",
+  "original_contract_sum": 5030200.0,
+  "contract_sum_before": 5281808.0,
+  "revised_contract_sum": 5299815.0,
+  "schedule_impact_days": 0,
+  "approval_status": "pending",
+  "line_items_totals": [
+    11129,
+    6522,
+    356
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "change_order_number": "1",
+  "project_name": [
+    "City of Ramsey Public Works",
+    "General Construction"
+  ],
+  "contractor": "RJM Construction, LLC",
+  "owner": [
+    "City of Ramsey Public Works",
+    "City of Ramsey"
+  ],
+  "date_issued": "2020-11-11",
+  "description": null,
+  "cost_change": 1021837.0,
+  "currency": "USD",
+  "original_contract_sum": 610087.0,
+  "contract_sum_before": 610087.0,
+  "revised_contract_sum": 1631924.0,
+  "schedule_impact_days": 20,
+  "approval_status": "pending",
+  "approved_by": null,
+  "line_items_totals": []
+}

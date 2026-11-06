@@ -1,0 +1,26 @@
+{
+  "change_order_number": null,
+  "project_name": "Oakwood Elementary Gym Floor",
+  "contractor": "Precision Flooring Co.",
+  "owner": null,
+  "date_issued": null,
+  "description": "Replace water-damaged gym floor section",
+  "reason": null,
+  "reason_category": null,
+  "cost_change": 19500.0,
+  "currency": "USD",
+  "original_contract_sum": null,
+  "contract_sum_before": null,
+  "revised_contract_sum": null,
+  "schedule_impact_days": null,
+  "approval_status": [
+    null,
+    "pending"
+  ],
+  "approved_by": null,
+  "date_approved": null,
+  "line_items_totals": [
+    17500.0,
+    2500.0
+  ]
+}
