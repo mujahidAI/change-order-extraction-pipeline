@@ -18,6 +18,7 @@ On 11 test documents with known answers (5 synthetic, 6 real), it got 168 of 170
    source .venv/bin/activate        # macOS / Linux
    pip install -r requirements.txt
    ```
+   Or, if you have `make`: run `make setup`. It creates `.venv`, installs the packages and copies `.env.example` to `.env`. Other targets: `make test`, `make eval`, `make eval-cached`, `make api`, `make clean`.
 
 2. **Install Tesseract OCR.** It's only used for scanned pages.
    ```bash
