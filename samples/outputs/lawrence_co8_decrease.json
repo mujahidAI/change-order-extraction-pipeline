@@ -1,0 +1,180 @@
+{
+  "change_order_number": {
+    "value": "08",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "project_name": {
+    "value": "Water System Improvements \u2013 Phase II",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "contractor": {
+    "value": "J.G. Case Construction, Inc.",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "owner": {
+    "value": "City of Lawrence Utilities",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "date_issued": {
+    "value": "2024-11-19",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "description": {
+    "value": "Pursuant to Change Order 5, Contractor will reimburse the City of Lawrence for full-time RPR fees incurred from Wessler to finish the project. This Change Order includes the final Wessler fees to process and prepare final record drawings.",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "reason": {
+    "value": "Reimbursement for full-time RPR fees incurred from Wessler to finish the project and to process and prepare final record drawings.",
+    "confidence": 0.63,
+    "signals": {
+      "agreement": 0.33,
+      "grounding": 0.93
+    }
+  },
+  "reason_category": {
+    "value": "owner_request",
+    "confidence": 0.58,
+    "signals": {
+      "agreement": 0.67,
+      "grounding": 0.5
+    }
+  },
+  "cost_change": {
+    "value": -14000.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "currency": {
+    "value": "USD",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "original_contract_sum": {
+    "value": 3367585.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "contract_sum_before": {
+    "value": 3658843.52,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "revised_contract_sum": {
+    "value": 3644843.52,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "schedule_impact_days": {
+    "value": 0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "approval_status": {
+    "value": "pending",
+    "confidence": 0.75,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5
+    }
+  },
+  "approved_by": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "date_approved": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "line_items": [],
+  "validation": [
+    {
+      "check": "date_plausible",
+      "fields": [
+        "date_issued"
+      ],
+      "passed": true,
+      "message": "date_issued=2024-11-19"
+    },
+    {
+      "check": "contract_sum_math",
+      "fields": [
+        "contract_sum_before",
+        "cost_change",
+        "revised_contract_sum"
+      ],
+      "passed": true,
+      "message": "3658843.52 + -14000.0 = 3644843.52, stated 3644843.52"
+    },
+    {
+      "check": "required_present",
+      "fields": [
+        "change_order_number"
+      ],
+      "passed": true,
+      "message": "change_order_number is present"
+    }
+  ],
+  "meta": {
+    "source_type": "pdf_digital",
+    "pages": 1,
+    "mode": "llm",
+    "model": "openai/gpt-oss-120b",
+    "passes": 3,
+    "ocr_mean_confidence": null
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "change_order_number": {
+    "value": "1",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "project_name": {
+    "value": "Gregg Manor Road Ground Storage Tank and Pressurization Facility Improvements",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "contractor": {
+    "value": "CC Carlton, Industries, Ltd.",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "owner": {
+    "value": "City",
+    "confidence": 0.84,
+    "signals": {
+      "agreement": 0.67,
+      "grounding": 1.0
+    }
+  },
+  "date_issued": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "description": {
+    "value": "Add an addition of 123 calendar days to the project completion date",
+    "confidence": 0.84,
+    "signals": {
+      "agreement": 0.67,
+      "grounding": 1.0
+    }
+  },
+  "reason": {
+    "value": "Unforeseen electrical service issues required additional work by the contractor, prompting a request for a schedule extension",
+    "confidence": 0.5,
+    "signals": {
+      "agreement": 0.33,
+      "grounding": 0.67
+    }
+  },
+  "reason_category": {
+    "value": "unforeseen_condition",
+    "confidence": 0.75,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5
+    }
+  },
+  "cost_change": {
+    "value": 0.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "currency": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "original_contract_sum": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "contract_sum_before": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "revised_contract_sum": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "schedule_impact_days": {
+    "value": 123,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "approval_status": {
+    "value": "pending",
+    "confidence": 0.75,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5
+    }
+  },
+  "approved_by": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "date_approved": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "line_items": [],
+  "validation": [
+    {
+      "check": "required_present",
+      "fields": [
+        "change_order_number"
+      ],
+      "passed": true,
+      "message": "change_order_number is present"
+    }
+  ],
+  "meta": {
+    "source_type": "pdf_digital",
+    "pages": 1,
+    "mode": "llm",
+    "model": "openai/gpt-oss-120b",
+    "passes": 3,
+    "ocr_mean_confidence": null
+  }
+}

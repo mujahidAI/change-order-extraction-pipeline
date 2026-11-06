@@ -1,0 +1,199 @@
+{
+  "change_order_number": {
+    "value": "4",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "project_name": {
+    "value": "2025 Commercial Full Depth Reclamation Improvements Project",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "contractor": {
+    "value": "Anderson Brothers Construction",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "owner": {
+    "value": "City",
+    "confidence": 0.84,
+    "signals": {
+      "agreement": 0.67,
+      "grounding": 1.0
+    }
+  },
+  "date_issued": {
+    "value": null,
+    "confidence": 0.67,
+    "signals": {
+      "agreement": 0.67
+    }
+  },
+  "description": {
+    "value": "Increase in contract amount for additional sanitary sewer pipe replacement, repair sleeve installation, and valve box reset",
+    "confidence": 0.55,
+    "signals": {
+      "agreement": 0.33,
+      "grounding": 0.77
+    }
+  },
+  "reason": {
+    "value": "Discovered backfall in existing sanitary sewer pipe requiring removal and replacement, and discovery of a narrow saddle and missing gate valve leading to repair sleeve installation and valve box reset",
+    "confidence": 0.51,
+    "signals": {
+      "agreement": 0.33,
+      "grounding": 0.7
+    }
+  },
+  "reason_category": {
+    "value": "unforeseen_condition",
+    "confidence": 0.75,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5
+    }
+  },
+  "cost_change": {
+    "value": 23341.29,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "currency": {
+    "value": "USD",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "original_contract_sum": {
+    "value": 737884.85,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "contract_sum_before": {
+    "value": 741535.75,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "revised_contract_sum": {
+    "value": 764877.04,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "schedule_impact_days": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "approval_status": {
+    "value": "pending",
+    "confidence": 0.58,
+    "signals": {
+      "agreement": 0.67,
+      "grounding": 0.5
+    }
+  },
+  "approved_by": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "date_approved": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "line_items": [
+    {
+      "item": "During the original sanitary sewer work connection, it was discovered that the existing sanitary sewer pipe had backfall, preventing proper flow. The pipe was removed and replaced up to the next upstream manhole, including dewatering and rock bedding replacement. Existing pipe SDR 26 used instead of planned SDR 35 to avoid reducer",
+      "qty": null,
+      "unit": null,
+      "unit_cost": null,
+      "total": 20404.91,
+      "confidence": 0.84,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 0.67
+      }
+    },
+    {
+      "item": "During the water service removal on Whispering Woods Lane, a narrow saddle was replaced with a repair sleeve, an exploration dig verified missing gate valve, and a valve box at the woodchip trail entrance was reset",
+      "qty": null,
+      "unit": null,
+      "unit_cost": null,
+      "total": 2936.38,
+      "confidence": 0.75,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 0.5
+      }
+    }
+  ],
+  "validation": [
+    {
+      "check": "line_items_sum",
+      "fields": [
+        "cost_change",
+        "line_items"
+      ],
+      "passed": true,
+      "message": "sum of line items 23341.29 vs cost_change 23341.29"
+    },
+    {
+      "check": "contract_sum_math",
+      "fields": [
+        "contract_sum_before",
+        "cost_change",
+        "revised_contract_sum"
+      ],
+      "passed": true,
+      "message": "741535.75 + 23341.29 = 764877.04, stated 764877.04"
+    },
+    {
+      "check": "required_present",
+      "fields": [
+        "change_order_number"
+      ],
+      "passed": true,
+      "message": "change_order_number is present"
+    }
+  ],
+  "meta": {
+    "source_type": "pdf_digital",
+    "pages": 2,
+    "mode": "llm",
+    "model": "openai/gpt-oss-120b",
+    "passes": 3,
+    "ocr_mean_confidence": null
+  }
+}

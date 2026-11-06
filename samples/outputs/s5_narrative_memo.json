@@ -1,0 +1,226 @@
+{
+  "change_order_number": {
+    "value": "2",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "project_name": {
+    "value": "Westgate Fire Station No. 4",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "contractor": {
+    "value": "Ironclad Mechanical LLC",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "owner": {
+    "value": "Westgate County",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "date_issued": {
+    "value": "2026-01-27",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "description": {
+    "value": "sprinkler system in the apparatus bay must be upgraded to a higher density design",
+    "confidence": 0.84,
+    "signals": {
+      "agreement": 0.67,
+      "grounding": 1.0
+    }
+  },
+  "reason": {
+    "value": "updated fire code (NFPA 13 revision adopted by the county)",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "reason_category": {
+    "value": "code_compliance",
+    "confidence": 0.75,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5
+    }
+  },
+  "cost_change": {
+    "value": 12480.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "currency": {
+    "value": "USD",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "original_contract_sum": {
+    "value": 3400000.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "contract_sum_before": {
+    "value": 3415200.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "revised_contract_sum": {
+    "value": 3427680.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "schedule_impact_days": {
+    "value": 7,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "approval_status": {
+    "value": "approved",
+    "confidence": 0.75,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5
+    }
+  },
+  "approved_by": {
+    "value": "Maria Alvarez",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "date_approved": {
+    "value": "2026-02-02",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "line_items": [
+    {
+      "item": "Sprinkler system upgrade",
+      "qty": 1.0,
+      "unit": "lump sum",
+      "unit_cost": 12480.0,
+      "total": 12480.0,
+      "confidence": 0.84,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 0.69
+      }
+    }
+  ],
+  "validation": [
+    {
+      "check": "date_plausible",
+      "fields": [
+        "date_issued"
+      ],
+      "passed": true,
+      "message": "date_issued=2026-01-27"
+    },
+    {
+      "check": "date_plausible",
+      "fields": [
+        "date_approved"
+      ],
+      "passed": true,
+      "message": "date_approved=2026-02-02"
+    },
+    {
+      "check": "date_order",
+      "fields": [
+        "date_issued",
+        "date_approved"
+      ],
+      "passed": true,
+      "message": "approved 2026-02-02 vs issued 2026-01-27"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[0]"
+      ],
+      "passed": true,
+      "message": "1.0 x 12480.0 = 12480.00, stated 12480.0"
+    },
+    {
+      "check": "line_items_sum",
+      "fields": [
+        "cost_change",
+        "line_items"
+      ],
+      "passed": true,
+      "message": "sum of line items 12480.00 vs cost_change 12480.0"
+    },
+    {
+      "check": "contract_sum_math",
+      "fields": [
+        "contract_sum_before",
+        "cost_change",
+        "revised_contract_sum"
+      ],
+      "passed": true,
+      "message": "3415200.0 + 12480.0 = 3427680.00, stated 3427680.0"
+    },
+    {
+      "check": "required_present",
+      "fields": [
+        "change_order_number"
+      ],
+      "passed": true,
+      "message": "change_order_number is present"
+    }
+  ],
+  "meta": {
+    "source_type": "pdf_digital",
+    "pages": 1,
+    "mode": "llm",
+    "model": "openai/gpt-oss-120b",
+    "passes": 3,
+    "ocr_mean_confidence": null
+  }
+}

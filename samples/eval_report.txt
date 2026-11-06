@@ -1,0 +1,49 @@
+
+s1_digital_table  [pdf_digital, llm]  failed checks: -
+
+s2_scanned  [pdf_scanned, llm]  failed checks: -
+   x line_items: got []
+
+s3_email  [text, llm]  failed checks: -
+
+s4_missing_and_bad_math  [text, llm]  failed checks: ['line_item_math', 'line_items_sum', 'required_present']
+
+s5_narrative_memo  [pdf_digital, llm]  failed checks: -
+
+baxter_mn_co4_council_memo  [pdf_digital, llm]  failed checks: -
+
+jackson_mo_co1_ejcdc  [pdf_digital, llm]  failed checks: ['line_item_math', 'line_item_math', 'line_item_math', 'line_item_math', 'line_item_math', 'line_item_math', 'line_item_math', 'line_item_math', 'line_item_math', 'line_item_math']
+
+lawrence_co8_decrease  [pdf_digital, llm]  failed checks: -
+
+manor_tx_co1_time_only  [pdf_digital, llm]  failed checks: -
+
+marshall_mn_co10_mixed_scanned  [pdf_mixed, llm]  failed checks: -
+
+ramsey_mn_co1_aia_g701  [pdf_scanned, llm]  failed checks: -
+   x project_name: got None (conf 0.67), want ['City of Ramsey Public Works', 'General Construction']
+
+=== Field accuracy: 168/170 = 99%
+  approval_status          11/11
+  approved_by              6/6
+  change_order_number      11/11
+  contract_sum_before      10/10
+  contractor               11/11
+  cost_change              11/11
+  currency                 11/11
+  date_approved            5/5
+  date_issued              11/11
+  description              6/6
+  line_items               9/10
+  original_contract_sum    11/11
+  owner                    11/11
+  project_name             10/11
+  reason                   5/5
+  reason_category          7/7
+  revised_contract_sum     11/11
+  schedule_impact_days     11/11
+
+=== Calibration (is a high score more often right?)
+  high  (>=0.8)  n=150  accuracy=100%
+  medium (0.5-0.8)  n= 36  accuracy=97%
+  low   (<0.5)  n=  0  accuracy=-

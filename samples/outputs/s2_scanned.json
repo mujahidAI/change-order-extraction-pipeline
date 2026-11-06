@@ -1,0 +1,207 @@
+{
+  "change_order_number": {
+    "value": "7",
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0,
+      "ocr": 0.96
+    }
+  },
+  "project_name": {
+    "value": "Maple Street Library Renovation",
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "ocr": 0.96
+    }
+  },
+  "contractor": {
+    "value": "Northline Construction Inc.",
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "ocr": 0.94
+    }
+  },
+  "owner": {
+    "value": "City of Maple Grove",
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "ocr": 0.96
+    }
+  },
+  "date_issued": {
+    "value": "2025-10-03",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "description": {
+    "value": "Substitute specified Armstrong acoustic ceiling tile with USG Mars tile.",
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "ocr": 0.95
+    }
+  },
+  "reason": {
+    "value": "Specified tile discontinued by manufacturer.",
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "ocr": 0.96
+    }
+  },
+  "reason_category": {
+    "value": "material_substitution",
+    "confidence": 0.75,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5
+    }
+  },
+  "cost_change": {
+    "value": -240.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "currency": {
+    "value": "USD",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "original_contract_sum": {
+    "value": 842500.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "contract_sum_before": {
+    "value": 851300.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "revised_contract_sum": {
+    "value": 851060.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "schedule_impact_days": {
+    "value": 0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "approval_status": {
+    "value": "approved",
+    "confidence": 0.79,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5,
+      "ocr": 0.96
+    }
+  },
+  "approved_by": {
+    "value": "Dana Whitfield",
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "ocr": 0.95
+    }
+  },
+  "date_approved": {
+    "value": "2025-10-09",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "line_items": [],
+  "validation": [
+    {
+      "check": "date_plausible",
+      "fields": [
+        "date_issued"
+      ],
+      "passed": true,
+      "message": "date_issued=2025-10-03"
+    },
+    {
+      "check": "date_plausible",
+      "fields": [
+        "date_approved"
+      ],
+      "passed": true,
+      "message": "date_approved=2025-10-09"
+    },
+    {
+      "check": "date_order",
+      "fields": [
+        "date_issued",
+        "date_approved"
+      ],
+      "passed": true,
+      "message": "approved 2025-10-09 vs issued 2025-10-03"
+    },
+    {
+      "check": "contract_sum_math",
+      "fields": [
+        "contract_sum_before",
+        "cost_change",
+        "revised_contract_sum"
+      ],
+      "passed": true,
+      "message": "851300.0 + -240.0 = 851060.00, stated 851060.0"
+    },
+    {
+      "check": "required_present",
+      "fields": [
+        "change_order_number"
+      ],
+      "passed": true,
+      "message": "change_order_number is present"
+    }
+  ],
+  "meta": {
+    "source_type": "pdf_scanned",
+    "pages": 1,
+    "mode": "llm",
+    "model": "openai/gpt-oss-120b",
+    "passes": 3,
+    "ocr_mean_confidence": 0.86
+  }
+}

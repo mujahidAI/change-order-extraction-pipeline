@@ -1,0 +1,451 @@
+{
+  "change_order_number": {
+    "value": "1",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "project_name": {
+    "value": "Phase 3 Sanitary Sewer Extension along Williams Creek / S. Old Orchard Rd.",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "contractor": {
+    "value": "CE Contracting, Inc.",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "owner": {
+    "value": "City of Jackson, MO",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "date_issued": {
+    "value": "2025-09-18",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "description": {
+    "value": "The change will add an work items as follows: Item #\u2019s 3-7, 10-12, and 15-16 were increased to account for the line extension to serve the Brandon Williams Tract south along S. Old Orchard Road. Item #6 is increased from the contract unit cost amount due to the increased depth of the sewer requiring trench-boxing for most of the length, and for traffic control required for working in very close proximity to South Old orchard Road. Item #12 is increased based on the increased depth of the manholes. Items #101-103 were added to account for additional items not included in the base bid which are required for the line extension.",
+    "confidence": 0.67,
+    "signals": {
+      "agreement": 0.33,
+      "grounding": 1.0
+    }
+  },
+  "reason": {
+    "value": "To serve the Brandon Williams Tract south along S. Old Orchard Road and to accommodate increased depth of sewer and manholes.",
+    "confidence": 0.62,
+    "signals": {
+      "agreement": 0.33,
+      "grounding": 0.92
+    }
+  },
+  "reason_category": {
+    "value": "owner_request",
+    "confidence": 0.75,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5
+    }
+  },
+  "cost_change": {
+    "value": 159053.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "currency": {
+    "value": "USD",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "original_contract_sum": {
+    "value": 237866.1,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "contract_sum_before": {
+    "value": 237866.1,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "revised_contract_sum": {
+    "value": 396919.1,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "schedule_impact_days": {
+    "value": 61,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "approval_status": {
+    "value": "pending",
+    "confidence": 0.75,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5
+    }
+  },
+  "approved_by": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "date_approved": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "line_items": [
+    {
+      "item": "Silt Fence",
+      "qty": 1220.0,
+      "unit": "LF",
+      "unit_cost": 3.0,
+      "total": 2520.0,
+      "confidence": 0.5,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "Seed, Mulch, & Surface Restoration",
+      "qty": 0.62,
+      "unit": "AC",
+      "unit_cost": 0.35,
+      "total": 3955.0,
+      "confidence": 0.5,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "Rock Excavation",
+      "qty": 439.0,
+      "unit": "CY",
+      "unit_cost": 71.0,
+      "total": 14200.0,
+      "confidence": 0.5,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "8\" SDR-35 PVC Sewer Main",
+      "qty": 1163.0,
+      "unit": "LF",
+      "unit_cost": 814.0,
+      "total": 80586.0,
+      "confidence": 0.5,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "8\" Ductile Iron Sanitary Sewer Pipe",
+      "qty": 149.0,
+      "unit": "LF",
+      "unit_cost": 33.0,
+      "total": 4323.0,
+      "confidence": 0.5,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "8\" SDR 35 PVC Stub with Cap for Future Connection",
+      "qty": 2.0,
+      "unit": "EA",
+      "unit_cost": 1.0,
+      "total": 447.0,
+      "confidence": 0.5,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "Connection to Existing Manhole",
+      "qty": 1.0,
+      "unit": "EA",
+      "unit_cost": 1.0,
+      "total": 2300.0,
+      "confidence": 0.5,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "Sanitary Sewer Standard Manhole",
+      "qty": 4.0,
+      "unit": "EA",
+      "unit_cost": 4.0,
+      "total": 24880.0,
+      "confidence": 0.5,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "Concrete Encased Creek Crossing",
+      "qty": 45.0,
+      "unit": "LF",
+      "unit_cost": 31.0,
+      "total": 3782.0,
+      "confidence": 0.5,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "Furnish and Place Rip-Rap Creek and Bank Protection",
+      "qty": 87.3,
+      "unit": "TN",
+      "unit_cost": 32.0,
+      "total": 1504.0,
+      "confidence": 0.5,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "EBAA Iron 8\" DIP to 8\" PVC RJ Transition Coupling",
+      "qty": 2.0,
+      "unit": "EA",
+      "unit_cost": 1040.0,
+      "total": 2080.0,
+      "confidence": 1.0,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "Full Depth Granular Backfill in Driveway Crossings",
+      "qty": 515.0,
+      "unit": "TN",
+      "unit_cost": 34.0,
+      "total": 17510.0,
+      "confidence": 1.0,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "Full-Depth Saw-Cut Existing Driveways",
+      "qty": 69.0,
+      "unit": "LF",
+      "unit_cost": 14.0,
+      "total": 966.0,
+      "confidence": 1.0,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    }
+  ],
+  "validation": [
+    {
+      "check": "date_plausible",
+      "fields": [
+        "date_issued"
+      ],
+      "passed": true,
+      "message": "date_issued=2025-09-18"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[0]"
+      ],
+      "passed": false,
+      "message": "1220.0 x 3.0 = 3660.00, stated 2520.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[1]"
+      ],
+      "passed": false,
+      "message": "0.62 x 0.35 = 0.22, stated 3955.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[2]"
+      ],
+      "passed": false,
+      "message": "439.0 x 71.0 = 31169.00, stated 14200.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[3]"
+      ],
+      "passed": false,
+      "message": "1163.0 x 814.0 = 946682.00, stated 80586.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[4]"
+      ],
+      "passed": false,
+      "message": "149.0 x 33.0 = 4917.00, stated 4323.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[5]"
+      ],
+      "passed": false,
+      "message": "2.0 x 1.0 = 2.00, stated 447.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[6]"
+      ],
+      "passed": false,
+      "message": "1.0 x 1.0 = 1.00, stated 2300.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[7]"
+      ],
+      "passed": false,
+      "message": "4.0 x 4.0 = 16.00, stated 24880.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[8]"
+      ],
+      "passed": false,
+      "message": "45.0 x 31.0 = 1395.00, stated 3782.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[9]"
+      ],
+      "passed": false,
+      "message": "87.3 x 32.0 = 2793.60, stated 1504.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[10]"
+      ],
+      "passed": true,
+      "message": "2.0 x 1040.0 = 2080.00, stated 2080.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[11]"
+      ],
+      "passed": true,
+      "message": "515.0 x 34.0 = 17510.00, stated 17510.0"
+    },
+    {
+      "check": "line_item_math",
+      "fields": [
+        "line_items[12]"
+      ],
+      "passed": true,
+      "message": "69.0 x 14.0 = 966.00, stated 966.0"
+    },
+    {
+      "check": "line_items_sum",
+      "fields": [
+        "cost_change",
+        "line_items"
+      ],
+      "passed": true,
+      "message": "sum of line items 159053.00 vs cost_change 159053.0"
+    },
+    {
+      "check": "contract_sum_math",
+      "fields": [
+        "contract_sum_before",
+        "cost_change",
+        "revised_contract_sum"
+      ],
+      "passed": true,
+      "message": "237866.1 + 159053.0 = 396919.10, stated 396919.1"
+    },
+    {
+      "check": "required_present",
+      "fields": [
+        "change_order_number"
+      ],
+      "passed": true,
+      "message": "change_order_number is present"
+    }
+  ],
+  "meta": {
+    "source_type": "pdf_digital",
+    "pages": 3,
+    "mode": "llm",
+    "model": "openai/gpt-oss-120b",
+    "passes": 3,
+    "ocr_mean_confidence": null
+  }
+}

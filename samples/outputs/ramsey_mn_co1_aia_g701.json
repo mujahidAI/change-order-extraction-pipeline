@@ -1,0 +1,180 @@
+{
+  "change_order_number": {
+    "value": "1",
+    "confidence": 0.98,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0,
+      "ocr": 0.84
+    }
+  },
+  "project_name": {
+    "value": null,
+    "confidence": 0.67,
+    "signals": {
+      "agreement": 0.67
+    }
+  },
+  "contractor": {
+    "value": "RJM Construction, LLC",
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "ocr": 0.96
+    }
+  },
+  "owner": {
+    "value": "City of Ramsey Public Works",
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "ocr": 0.96
+    }
+  },
+  "date_issued": {
+    "value": "2020-11-11",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "description": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "reason": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "reason_category": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "cost_change": {
+    "value": 1021837.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "currency": {
+    "value": "USD",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "original_contract_sum": {
+    "value": 610087.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "contract_sum_before": {
+    "value": 610087.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "revised_contract_sum": {
+    "value": 1631924.0,
+    "confidence": 0.82,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 0.0
+    }
+  },
+  "schedule_impact_days": {
+    "value": 20,
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0,
+      "ocr": 0.96
+    }
+  },
+  "approval_status": {
+    "value": "pending",
+    "confidence": 0.75,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5
+    }
+  },
+  "approved_by": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "date_approved": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "line_items": [],
+  "validation": [
+    {
+      "check": "date_plausible",
+      "fields": [
+        "date_issued"
+      ],
+      "passed": true,
+      "message": "date_issued=2020-11-11"
+    },
+    {
+      "check": "contract_sum_math",
+      "fields": [
+        "contract_sum_before",
+        "cost_change",
+        "revised_contract_sum"
+      ],
+      "passed": true,
+      "message": "610087.0 + 1021837.0 = 1631924.00, stated 1631924.0"
+    },
+    {
+      "check": "required_present",
+      "fields": [
+        "change_order_number"
+      ],
+      "passed": true,
+      "message": "change_order_number is present"
+    }
+  ],
+  "meta": {
+    "source_type": "pdf_scanned",
+    "pages": 1,
+    "mode": "llm",
+    "model": "openai/gpt-oss-120b",
+    "passes": 3,
+    "ocr_mean_confidence": 0.94
+  }
+}

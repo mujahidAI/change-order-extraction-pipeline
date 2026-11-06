@@ -1,0 +1,229 @@
+{
+  "change_order_number": {
+    "value": "10",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0,
+      "ocr": 0.97
+    }
+  },
+  "project_name": {
+    "value": "Marshall Municipal Building",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "contractor": {
+    "value": "Brennan Construction of MN, Inc.",
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "ocr": 0.96
+    }
+  },
+  "owner": {
+    "value": "City of Marshall",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "date_issued": {
+    "value": "2020-11-05",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0
+    }
+  },
+  "description": {
+    "value": "PR04 Steel Only, CR 13 Fire Alarm changes, and CR 17 Framing for RFI 27",
+    "confidence": 0.72,
+    "signals": {
+      "agreement": 0.33,
+      "grounding": 1.0,
+      "ocr": 0.96
+    }
+  },
+  "reason": {
+    "value": null,
+    "confidence": 0.67,
+    "signals": {
+      "agreement": 0.67
+    }
+  },
+  "reason_category": {
+    "value": "other",
+    "confidence": 0.43,
+    "signals": {
+      "agreement": 0.67,
+      "grounding": 0.2
+    }
+  },
+  "cost_change": {
+    "value": 18007.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "currency": {
+    "value": "USD",
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "original_contract_sum": {
+    "value": 5030200.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "contract_sum_before": {
+    "value": 5281808.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "revised_contract_sum": {
+    "value": 5299815.0,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0
+    }
+  },
+  "schedule_impact_days": {
+    "value": 0,
+    "confidence": 0.99,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 1.0,
+      "rule": 1.0,
+      "ocr": 0.96
+    }
+  },
+  "approval_status": {
+    "value": "pending",
+    "confidence": 0.75,
+    "signals": {
+      "agreement": 1.0,
+      "grounding": 0.5
+    }
+  },
+  "approved_by": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "date_approved": {
+    "value": null,
+    "confidence": 1.0,
+    "signals": {
+      "agreement": 1.0
+    }
+  },
+  "line_items": [
+    {
+      "item": "PR04 Steel Only",
+      "qty": null,
+      "unit": null,
+      "unit_cost": null,
+      "total": 11129.0,
+      "confidence": 1.0,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    },
+    {
+      "item": "CR 13 Fire Alarm changes",
+      "qty": null,
+      "unit": null,
+      "unit_cost": null,
+      "total": 6522.0,
+      "confidence": 0.9,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 0.79
+      }
+    },
+    {
+      "item": "CR 17 Framing for RFI 27",
+      "qty": null,
+      "unit": null,
+      "unit_cost": null,
+      "total": 356.0,
+      "confidence": 1.0,
+      "signals": {
+        "agreement": 1.0,
+        "grounding": 1.0
+      }
+    }
+  ],
+  "validation": [
+    {
+      "check": "date_plausible",
+      "fields": [
+        "date_issued"
+      ],
+      "passed": true,
+      "message": "date_issued=2020-11-05"
+    },
+    {
+      "check": "line_items_sum",
+      "fields": [
+        "cost_change",
+        "line_items"
+      ],
+      "passed": true,
+      "message": "sum of line items 18007.00 vs cost_change 18007.0"
+    },
+    {
+      "check": "contract_sum_math",
+      "fields": [
+        "contract_sum_before",
+        "cost_change",
+        "revised_contract_sum"
+      ],
+      "passed": true,
+      "message": "5281808.0 + 18007.0 = 5299815.00, stated 5299815.0"
+    },
+    {
+      "check": "required_present",
+      "fields": [
+        "change_order_number"
+      ],
+      "passed": true,
+      "message": "change_order_number is present"
+    }
+  ],
+  "meta": {
+    "source_type": "pdf_mixed",
+    "pages": 8,
+    "mode": "llm",
+    "model": "openai/gpt-oss-120b",
+    "passes": 3,
+    "ocr_mean_confidence": 0.88
+  }
+}
